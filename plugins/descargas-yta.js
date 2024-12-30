@@ -4,7 +4,7 @@ import yts from 'yt-search'
 import ytdl from 'ytdl-core'
 import { ytDownload } from '../lib/y2mate.js'
 let handler = async (m, { text, conn, args, usedPrefix, command }) => {
-if (!args[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}${mid.smsMalused7}\n*${usedPrefix + command} https://youtu.be/c5gJRzCi0f0*`, fkontak, m)
+if (!args[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}${mid.smsMalused7}\n*${usedPrefix + command} https://www.youtube.com/watch?v=7SNycTMOF74*`, fkontak, m)
 let youtubeLink = '';
 if (args[0].includes('you')) {
 youtubeLink = args[0]; 
@@ -28,11 +28,19 @@ try {
 let v = youtubeLink;
 const dataRE = await fetch(`https://www.vanitas-api.online/download/ytmp3?url=${v}`);
 const dataRET = await dataRE.json();
+console.log(dataRET)
+await conn.sendMessage(m.chat, { audio: { url: dataRET.response.link }, fileName: `default.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
+} catch {   
+try {
+let v = youtubeLink;
+const dataRE = await fetch(`https://www.vanitas-api.online/download/ytmp3?url=${v}`);
+const dataRET = await dataRE.json();
+console.log(dataRET)
 await conn.sendMessage(m.chat, { audio: { url: dataRET.response.link }, fileName: `default.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
 } catch (e) {
 await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${lenguajeGB['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, fkontak, m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}
-}
+}}
 handler.command = /^audio|fgmp3|dlmp3|getaud|yt(a|mp3)$/i
 export default handler
