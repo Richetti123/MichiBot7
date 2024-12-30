@@ -39,10 +39,10 @@ li.DESTRAVip.to
   
 }
 export default handler
-global.canales = [canal1, canal2, canal3, canal4].getRandom()
-global.welgata = [tk, ig, md, yt, paypal, fb, ths, asistencia].getRandom()
-global.redesMenu = [all, canal1, canal2, canal3, canal4, md, ig, paypal, yt, asistencia, fb, tk].getRandom()
-global.accountsgb = [all, canal1, canal2, canal3, canal4, tk, ig, yt, paypal, fb, ths, md, asistencia].getRandom()
+global.canales = [canal1, canal2, canal3, canal4][Math.floor(Math.random() * 4)]
+global.welgata = [tk, ig, md, yt, paypal, fb, ths, asistencia][Math.floor(Math.random() * 8)]
+global.redesMenu = [all, canal1, canal2, canal3, canal4, md, ig, paypal, yt, asistencia, fb, tk][Math.floor(Math.random() * 12)]
+global.accountsgb = [all, canal1, canal2, canal3, canal4, tk, ig, yt, paypal, fb, ths, md, asistencia][Math.floor(Math.random() * 13)]
 
 global.canalIdGB = ["120363258427334062@newsletter"]
 global.canalNombreGB = ["NOTICIAS MICHIBOT Y DERIVADOS😼🤖"]
@@ -89,9 +89,9 @@ global.img18 = 'https://i.ibb.co/zxpCsHJ/Menu2.jpg'
 
 global.logogit = 'https://i.ibb.co/zxpCsHJ/Menu2.jpg'
 
-global.gataVidMenu = ['https://i.ibb.co/zxpCsHJ/Menu2.jpg'].getRandom()
-global.gataMenu = [imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, img18].getRandom()
-global.gataImg = [imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1].getRandom()
+global.gataVidMenu = 'https://i.ibb.co/zxpCsHJ/Menu2.jpg'
+global.gataMenu = [imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, img18][Math.floor(Math.random() * 11)]
+global.gataImg = [imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1][Math.floor(Math.random() * 13)]
 
 // Mensaje de espera
 // await mensajesEditados(conn, m)
