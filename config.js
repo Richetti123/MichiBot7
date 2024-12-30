@@ -447,43 +447,16 @@ console.log(chalk.redBright("Update 'config.js'"));
 import(`${file}?update=${Date.now()}`);
 })
 
-async function fetchDataAndProcess() {
-const response = await fetch('https://raw.githubusercontent.com/Richetti123/MichiBot7/master/official_accounts.json')
-const data = await response.json() 
-let { accounts, channels, groups, collaboration, sponsors, others } = data.info
-
-global.yt = accounts.youTube
-global.yt2 = others.yt_vid
-global.ig = accounts.instagram
-global.md = accounts.gatabot_md
-global.fb = accounts.facebook
-global.tk = accounts.tiktok
-global.ths = accounts.threads
-global.paypal = accounts.paypal
-global.asistencia = others.assistance_num
-global.bot = 'wa.me/56928561853'
-global.cuentas = accounts.all
-
-global.canal1 = channels.channel1
-global.canal2 = channels.channel2
-global.canal3 = channels.channel3
-global.canal4 = channels.channel4
-
-global.soporteGB = others.group_support
-global.grupo1 = groups.group1
-global.grupo2 = groups.group2
-global.grupo3 = groups.group3
-global.grupo4 = groups.group4
-global.grupo5 = groups.group5
-global.grupo6 = groups.group6
-
-global.grupo_collab1 = collaboration.group1
-global.grupo_collab2 = collaboration.group2
-global.grupo_collab3 = collaboration.group3
-global.grupo_collab4 = collaboration.group4
-
-global.patrocinador1 = sponsors.boxmine
-global.patrocinador2 = sponsors.cafirexos
-global.patrocinador3 = sponsors.vortexus
-global.patrocinador4 = sponsors.asif
-}
+global.yt = 'https://www.instagram.com/ceogeripium.dzn'
+global.ig = 'https://www.instagram.com/ceogeripium.dzn'
+global.md = 'https://www.instagram.com/ceogeripium.dzn'
+global.fb = 'https://www.instagram.com/richetti_123'
+global.tk = 'https://www.instagram.com/richetti_123'
+global.ths = 'https://www.instagram.com/richetti_123'
+global.paypal = 'https://paypal.me/richetti123'
+global.asistencia = 'https://wa.me/56928561853'
+global.all = 'https://www.instagram.com/richetti_123'
+global.canal1 = 'https://whatsapp.com/channel/0029VaZ90V9EKyZGyqHKt61M'
+global.canal2 = 'https://whatsapp.com/channel/0029VaZ90V9EKyZGyqHKt61M'
+global.canal3 = 'https://whatsapp.com/channel/0029VaZ90V9EKyZGyqHKt61M'
+global.canal4 = 'https://whatsapp.com/channel/0029VaZ90V9EKyZGyqHKt61M'
