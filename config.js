@@ -143,8 +143,6 @@ global.vs = "1.7.0"
 global.vsJB = "3.0 (Beta)"
 global.gt = "MichiBot"
 
-fetchDataAndProcess().catch(error => console.error('Ocurrió un error:', error))
-
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 global.rg = '╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎𝙐𝙇𝙏* ⊱✅⊱╮\n\n'
