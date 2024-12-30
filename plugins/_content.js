@@ -90,7 +90,7 @@ global.img18 = 'https://i.ibb.co/zxpCsHJ/Menu2.jpg'
 global.logogit = 'https://i.ibb.co/zxpCsHJ/Menu2.jpg'
 
 global.gataVidMenu = 'https://i.ibb.co/zxpCsHJ/Menu2.jpg'
-global.gataMenu = [imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, img18][Math.floor(Math.random() * 11)]
+global.gataMenu = [img2, img2, img2, img2, img2, img2, img2, img2, img2, img2, img2][Math.floor(Math.random() * 11)]
 global.gataImg = [imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1, imagen1][Math.floor(Math.random() * 13)]
 
 // Mensaje de espera
